@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Pages</title>
+  <link rel="stylesheet" href="/css/default.css">
+  <script src="https://kit.fontawesome.com/0136c2760b.js" crossorigin="anonymous"></script>
+  <script src="/js/helperfunctions.js" type="module"></script>
+  <script src="/js/document.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <div id="logo"></div>
+  </header>
+  <nav>
+    <a class="button nav-link" href="/">
+      <i class="fas fa-home"></i>
+      <span>Start</span>
+    </a>
+    <a class="button nav-link" href="/about">
+      <i class="fas fa-book"></i>
+      <span>About</span>
+    </a>
+    <a class="button nav-link" href="/">
+      <i class="fas fa-cloud"></i>
+      <span>Empty</span>
+    </a>
+    <a class="button nav-link" href="/profile">
+      <i class="fas fa-user"></i>
+      <span>Profile</span>
+    </a>
+  </nav>
+  <main>
+    
+<div id="state-nav">
+  <div>
+    <ul>
+      <li>
+        <button name="state[0]" onclick="toggleState()" type="button" value="State1">State1</button>
+      </li>
+      <li>
+        <button name="state[1]" onclick="toggleState()" type="button" value="State2">State2</button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<h1>Spinny circle</h1>
+
+<svg viewBox="0 0 36 36" class="circular-chart">
+  <path class="circle c1"
+    stroke-dasharray="33, 17"
+    d="M18 2.0845
+      a 15.9155 15.9155 0 0 1 0 31.831
+      a 15.9155 15.9155 0 0 1 0 -31.831"
+  />
+</svg>
+
+<div class="card">
+  <h1>Item 1</h1>
+  <p>Card text</p>
+</div>
+<div class="card">
+  <h2>Item 2</h2>
+  <p>Card text</p>
+</div>
+<div class="card">
+  <h3>Item 3</h3>
+  <p>Card text</p>
+</div>
+  </main>
+  <footer>
+    <h2>Footer</h2>
+    <ul>
+      <li>
+        <h3>Contact information</h3>
+        <p>Firstname Lastname</p>
+        <p>mailto: email@example.com</p>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>

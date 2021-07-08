@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Pages | Readme</title>
+  <link rel="stylesheet" href="/css/default.css">
+  <script src="https://kit.fontawesome.com/0136c2760b.js" crossorigin="anonymous"></script>
+  <script src="/js/helperfunctions.js" type="module"></script>
+  <script src="/js/document.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <div id="logo"></div>
+  </header>
+  <nav>
+    <a class="button nav-link" href="/">
+      <i class="fas fa-home"></i>
+      <span>Start</span>
+    </a>
+    <a class="button nav-link" href="/about">
+      <i class="fas fa-book"></i>
+      <span>About</span>
+    </a>
+    <a class="button nav-link" href="/">
+      <i class="fas fa-cloud"></i>
+      <span>Empty</span>
+    </a>
+    <a class="button nav-link" href="/profile">
+      <i class="fas fa-user"></i>
+      <span>Profile</span>
+    </a>
+  </nav>
+  <main>
+    <blockquote>
+<h1>Config</h1>
+<p>This folder contains most settings for the project. npm installs should be performed here as well.</p>
+</blockquote>
+<blockquote>
+<h3>Prerequisites</h3>
+<ul>
+<li>
+<p><strong>Install npm</strong>
+<code>sudo apt install npm -y</code></p>
+</li>
+<li>
+<p><strong>Install git</strong>
+<code>sudo apt install git -y</code></p>
+</li>
+<li>
+<p><strong>Setup folder-dir</strong>
+<code>mkdir -p ~/source/repo/web/pages &amp;&amp; cd ~/source/repo/web/pages</code></p>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<h3>Setup</h3>
+<ol>
+<li>
+<p><strong>Initiate git</strong>
+<code>git init</code></p>
+</li>
+<li>
+<p><strong>Setup git config</strong> <br>
+(note: replace <em>italic</em> with real values)
+<code>git config --global user.name ***your username***</code>
+<code>git config --global user.email ***your email***</code>
+<code>git config --global credential.helper 'cache --timeout=3600'</code>
+<code>git remote add origin https://github.com/cyvu/pages.git</code></p>
+</li>
+<li>
+<p><strong>Download the project</strong>
+<code>git pull</code></p>
+</li>
+<li>
+<p><strong>Switch branch</strong> <em>Optional</em>
+<code>git checkout development</code></p>
+</li>
+<li>
+<p><strong>Install eleventy</strong> <br>
+Change directory to the projects <strong>Config</strong> directory
+<code>cd ~/source/repo/web/pages/config</code>
+<code>npm install @11ty/eleventy --save-dev</code></p>
+</li>
+</ol>
+</blockquote>
+<blockquote>
+<h3>Building,<br> running and<br> configurating the project</h3>
+<p>The provided bash script, <em>server.sh</em>, is located in the root folder where the folders config/ and private_html/ resides. The script handles building, running and other configurations.
+For now it takes the following arguments: build, serve (or start), set-dev and set-prod.</p>
+<p>Run it by executing the following in the terminal:
+<code>cd ~/source/repo/web/pages</code>
+<code>chmod +x server.sh</code>
+<code>./server.sh ***argument***</code></p>
+<p>Omiting an argument gives you a list of available commands to run.</p>
+</blockquote>
+
+  </main>
+  <footer>
+    <h2>Footer</h2>
+    <ul>
+      <li>
+        <h3>Contact information</h3>
+        <p>Firstname Lastname</p>
+        <p>mailto: email@example.com</p>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
