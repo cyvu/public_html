@@ -1,1 +1,1 @@
-# Static site build by the Pages repository
+# Static site built by the Pages repository
